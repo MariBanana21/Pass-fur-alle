@@ -87,9 +87,9 @@
                     availableTimeSlots = availableTimeSlots.filter(function() {
                         var office = jQuery(this).closest(".timetable-cells").attr("headers");
                         return acceptOffice.split(",").some(function(acceptedOffice) {
-                            return office.includes(acceptedOffice)
+                            return office.includes(acceptedOffice);
                         });
-                    }) 
+                    }); 
                 }
 
                 if (availableTimeSlots.length) {
